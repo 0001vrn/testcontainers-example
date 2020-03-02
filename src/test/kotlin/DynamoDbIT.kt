@@ -51,6 +51,20 @@ class DynamoDbIT {
     }
 
     @Test
+    fun `save, update and get on Db 😁`() {
+        var todo = Todo(12, "I will be saved and retrieved from Db")
+        todoRepository.saveOrUpdate(todo)
+        todo.message = "I am updated now!"
+        todoRepository.saveOrUpdate(todo)
+
+        val todoFromDb = todoRepository.getById(todo.todoId)
+
+        Assertions.assertNotNull(todoFromDb)
+        Assertions.assertEquals(todo.todoId, todoFromDb!!.todoId)
+        Assertions.assertEquals(todo.message, todoFromDb!!.message)
+    }
+
+    @Test
     fun `save and delete on Db 😧️`() {
         val todo = Todo(13, "I will be saved and deleted from Db")
 
