@@ -1,5 +1,7 @@
-import helper.DynamoDbContainerConfig
-import model.Todo
+package dynamo
+
+import dynamo.helper.DynamoDbContainerConfig
+import dynamo.model.Todo
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.AfterEach
 import org.junit.jupiter.api.Assertions
@@ -7,7 +9,7 @@ import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
-import repository.TodoRepository
+import dynamo.repository.TodoRepository
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class DynamoDbIT {

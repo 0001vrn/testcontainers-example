@@ -1,4 +1,4 @@
-package extension
+package dynamo.extension
 
 import org.testcontainers.containers.GenericContainer
 

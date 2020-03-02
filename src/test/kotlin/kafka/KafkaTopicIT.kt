@@ -1,3 +1,5 @@
+package kafka
+
 import org.junit.jupiter.api.Test
 
 class KafkaTopicIT {

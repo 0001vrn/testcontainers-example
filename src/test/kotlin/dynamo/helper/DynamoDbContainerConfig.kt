@@ -1,4 +1,4 @@
-package helper
+package dynamo.helper
 
 import com.amazonaws.auth.AWSStaticCredentialsProvider
 import com.amazonaws.auth.BasicAWSCredentials
@@ -7,7 +7,7 @@ import com.amazonaws.services.dynamodbv2.AmazonDynamoDB
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDBAsyncClientBuilder
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput
-import extension.KGenericContainer
+import dynamo.extension.KGenericContainer
 
 class DynamoDbContainerConfig {
     lateinit var dynamoDBMapper: DynamoDBMapper

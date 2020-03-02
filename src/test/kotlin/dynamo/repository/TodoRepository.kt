@@ -1,7 +1,7 @@
-package repository
+package dynamo.repository
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper
-import model.Todo
+import dynamo.model.Todo
 
 class TodoRepository(private val dynamoDBMapper: DynamoDBMapper) {
 
