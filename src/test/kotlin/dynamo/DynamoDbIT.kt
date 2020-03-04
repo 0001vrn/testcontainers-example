@@ -1,6 +1,6 @@
 package dynamo
 
-import dynamo.helper.DynamoDbContainerConfig
+import dynamo.config.DynamoDbContainerConfig
 import dynamo.model.Todo
 import org.junit.jupiter.api.AfterAll
 import org.junit.jupiter.api.AfterEach
